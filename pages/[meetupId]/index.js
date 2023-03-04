@@ -61,7 +61,7 @@ export async function getStaticPaths() {
   // console.log(meetups);
   const paths = meetups.map((meetup) => `/${meetup.id}`);
 
-  return { paths, fallback: false };
+  return { paths, fallback: "blocking" };
   // fallback: false,       // if an id is missing (p3, p4) it will forward to the 404 page
   // fallback: true,        // if an id is missing the page will be generated just in time, /!\ we need the fallback handler on client side
   // fallback: "blocking",  // nextjs wait for the page to be pre-generated on the server before server it
