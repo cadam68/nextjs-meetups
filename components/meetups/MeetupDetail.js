@@ -1,5 +1,5 @@
 import styles from "./MeetupDetail.module.css";
-import Card from "@/components/ui/Card";
+import Card from "../ui/Card";
 
 const MeetupDetail = (props) => {
   return (

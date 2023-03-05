@@ -1,4 +1,4 @@
-import NewMeetupForm from "@/components/meetups/NewMeetupForm";
+import NewMeetupForm from "../../components/meetups/NewMeetupForm";
 import { useRouter } from "next/router";
 import Head from "next/head";
 
@@ -7,6 +7,7 @@ const NewMeetupPage = () => {
 
   const addMeetupHandler = async (enteredMeetupData) => {
     console.log(enteredMeetupData);
+    console.log(JSON.stringify(enteredMeetupData));
 
     const response = await fetch(`/api/new-meetup`, {
       method: "POST",
@@ -19,7 +20,7 @@ const NewMeetupPage = () => {
     if (!response.ok) console.log(data.message || "Something went wrong!");
 
     console.log(data);
-    router.push(`/`);
+    // router.push(`/`);
   };
 
   return (
@@ -31,7 +32,7 @@ const NewMeetupPage = () => {
           content="Add your own meetups and create amazing networking opportunities."
         />
       </Head>
-      <NewMeetupForm onAddMeetup={addMeetupHandler} />;
+      <NewMeetupForm onAddMeetup={addMeetupHandler} />
     </>
   );
 };

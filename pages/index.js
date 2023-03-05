@@ -1,5 +1,5 @@
-import MeetupList from "@/components/meetups/MeetupList";
-import { getMeetups } from "@/lib/db-util";
+import MeetupList from "../components/meetups/MeetupList";
+import { getMeetups } from "../lib/db-util";
 import Head from "next/head";
 
 /*

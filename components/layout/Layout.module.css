@@ -3,3 +3,7 @@
   width: 90%;
   max-width: 40rem;
 }
+
+.mainLarge {
+  max-width: 80rem;
+}

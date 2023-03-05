@@ -13,6 +13,9 @@ function MainNavigation() {
           <li>
             <Link href="/new-meetup">Add New Meetup</Link>
           </li>
+          <li className={classes.divers}>
+            <Link href="/api-doc">API-Doc</Link>
+          </li>
         </ul>
       </nav>
     </header>

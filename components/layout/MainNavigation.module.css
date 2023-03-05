@@ -32,6 +32,10 @@
   color: #fcb8d2;
 }
 
+.header .divers a {
+  font-size: 1rem;
+}
+
 .header a:hover,
 .header a:active,
 .header a.active {

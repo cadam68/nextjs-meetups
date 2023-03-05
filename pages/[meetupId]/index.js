@@ -1,5 +1,5 @@
-import MeetupDetail from "@/components/meetups/MeetupDetail";
-import { getMeetup, getMeetups } from "@/lib/db-util";
+import MeetupDetail from "../../components/meetups/MeetupDetail";
+import { getMeetup, getMeetups } from "../../lib/db-util";
 import { ObjectId } from "mongodb";
 import Head from "next/head";
 

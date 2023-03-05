@@ -1,6 +1,6 @@
 import "../styles/globals.css";
-import Layout from "@/components/layout/Layout";
-import { usePageLoading } from "@/lib/usePageLoading";
+import Layout from "../components/layout/Layout";
+import { usePageLoading } from "../lib/usePageLoading";
 import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
