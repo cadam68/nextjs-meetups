@@ -41,7 +41,6 @@ import { insertMeetup } from "../../lib/db-util";
  */
 export default async function handler(req, res) {
   if (req.method === "POST") {
-    console.log("iici", req.body);
     const { title, image, address, description } = req.body;
     let meetupData = { title, image, address, description };
 
